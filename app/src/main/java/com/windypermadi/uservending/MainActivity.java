@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void InkuiriScan(String kode_tiket) {
         customProgress.showProgress(MainActivity.this, false);
-        AndroidNetworking.get(Config.HOST + "member.php")
+        AndroidNetworking.get(inputJaeingan.ipjaringan + "member.php")
                 .addQueryParameter("TAG", "lihat")
                 .addQueryParameter("kode_rfid", kode_tiket)
                 .setPriority(Priority.MEDIUM)

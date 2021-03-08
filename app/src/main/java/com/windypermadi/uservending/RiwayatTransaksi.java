@@ -54,7 +54,7 @@ public class RiwayatTransaksi extends AppCompatActivity {
     private void LoadData() {
         customProgress.showProgress(RiwayatTransaksi.this, false);
         RiwayatModel.clear();
-        AndroidNetworking.get(Config.HOST + "riwayat_pembelian.php")
+        AndroidNetworking.get(inputJaeingan.ipjaringan + "riwayat_pembelian.php")
                 .addQueryParameter("TAG", "lihat")
                 .addQueryParameter("kode_rfid", id_tiket)
                 .setPriority(Priority.MEDIUM)
