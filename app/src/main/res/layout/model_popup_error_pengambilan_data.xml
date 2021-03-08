@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AB000000"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:contentPadding="@dimen/fontsize10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/anim_failed" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Konfirmasi"
+                android:textColor="#de000000"
+                android:textSize="@dimen/fontsize20"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="#8a000000"
+                android:textSize="@dimen/fontsize15"
+                android:textStyle="normal"
+                tools:text="Sedang ada pemeliharaan system, silahkan lakukan kembali nanti." />
+
+            <TextView
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:text="Mengerti"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fontsize18"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
